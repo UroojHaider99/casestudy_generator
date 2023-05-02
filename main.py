@@ -50,7 +50,7 @@ if "role_input" not in st.session_state:
     st.session_state.role_input = ""
 
 if st.session_state.role_input != role_input:
-    llm = OpenAI(temperature=.7, openai_api_key="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")
+    llm = OpenAI(temperature=.7, openai_api_key=API_KEY)
     prompt_with_role = prompt.format(role=role_input)
     with st.spinner("Generating case study..."):
         generated_case_studies = llm(prompt_with_role)
