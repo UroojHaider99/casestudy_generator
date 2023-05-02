@@ -2,7 +2,6 @@ import streamlit as st
 from langchain import PromptTemplate
 from langchain.llms import OpenAI
 import os
-import win32clipboard
 
 API_KEY = st.secrets["API_KEY"]
 # Set the page title and icon
