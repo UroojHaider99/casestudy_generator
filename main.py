@@ -32,8 +32,8 @@ st.write("Use this tool to generate a case study to test candidates for a partic
 popular_roles = ["Software Developer", "Data Scientist", "Product Manager", "Sales Manager", "Marketing Manager",
                  "Customer Support Representative", "Business Analyst", "Graphic Designer", "Content Writer", "UI/UX Designer"]
 # Define the role selection
-st.markdown("<h4 style='font-family: Bebas Neue;'>Select Role Name</h4>", unsafe_allow_html=True)
-role_option = st.selectbox("Select",popular_roles, key="role_option")
+#st.markdown("<h4 style='font-family: Bebas Neue;'>Select Role Name</h4>", unsafe_allow_html=True)
+role_option = st.selectbox("Select Role Name",popular_roles, key="role_option")
 
 if role_option == "Other":
     role_input = st.text_input(label="Enter custom role name:", key="role_input")
