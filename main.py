@@ -33,7 +33,7 @@ popular_roles = ["Software Developer", "Data Scientist", "Product Manager", "Sal
                  "Customer Support Representative", "Business Analyst", "Graphic Designer", "Content Writer", "UI/UX Designer"]
 # Define the role selection
 st.markdown("<h4 style='font-family: Bebas Neue;'>Select Role Name</h4>", unsafe_allow_html=True)
-role_option = st.selectbox(popular_roles, key="role_option")
+role_option = st.selectbox("Select",popular_roles, key="role_option")
 
 if role_option == "Other":
     role_input = st.text_input(label="Enter custom role name:", key="role_input")
