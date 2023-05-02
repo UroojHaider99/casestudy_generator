@@ -2,7 +2,7 @@ import streamlit as st
 from langchain import PromptTemplate
 from langchain.llms import OpenAI
 import os
-import pyperclip
+import clipboard
 
 API_KEY = st.secrets["API_KEY"]
 # Set the page title and icon
@@ -66,7 +66,7 @@ st.write(st.session_state.generated_case_studies)
 # Add a copy button
 copy_button_col, _ = st.columns([3, 1])
 if copy_button_col.button("Copy to Clipboard"):
-    pyperclip.copy(st.session_state.generated_case_studies)
+    clipboard.copy(st.session_state.generated_case_studies)
     st.success("Case study copied to clipboard!")
 
 
