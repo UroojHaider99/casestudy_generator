@@ -6,7 +6,7 @@ import win32clipboard
 
 API_KEY = st.secrets["API_KEY"]
 # Set the page title and icon
-st.set_page_config(page_title="Case Study Generator", page_icon="\U0001F916")
+st.set_page_config(page_title="Case Study Generator 🦈", page_icon="\U0001F916")
 
 
 
